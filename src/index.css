@@ -4,6 +4,7 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
+Modern, premium design inspired by sophisticated agencies.
 */
 
 @layer base {
@@ -37,14 +38,18 @@ All colors MUST be HSL.
     --input: 220 13% 91%;
     --ring: 217 91% 60%;
 
-    /* AMR CodeStuff Brand Colors - Navy Blue Design System */
+    /* AMR CodeStuff Brand Colors - Premium Navy Blue Design System */
     --gradient-primary: linear-gradient(135deg, hsl(230 35% 25%), hsl(230 35% 35%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 100%), hsl(230 35% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(230 35% 25% / 0.95), hsl(220 35% 30% / 0.9));
     --gradient-tech: linear-gradient(135deg, hsl(230 35% 25%), hsl(220 35% 30%));
-    --shadow-elegant: 0 10px 30px -10px hsl(230 35% 25% / 0.15);
-    --shadow-glow: 0 0 40px hsl(230 35% 35% / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(230 35% 25% / 0.1);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --gradient-accent: linear-gradient(135deg, hsl(217 91% 60%), hsl(230 35% 35%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.05), hsl(0 0% 100% / 0.1));
+    --shadow-elegant: 0 20px 60px -10px hsl(230 35% 25% / 0.25);
+    --shadow-glow: 0 0 60px hsl(230 35% 35% / 0.3);
+    --shadow-card: 0 8px 32px -8px hsl(230 35% 25% / 0.15);
+    --shadow-hover: 0 12px 40px -8px hsl(230 35% 25% / 0.25);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
@@ -95,13 +100,16 @@ All colors MUST be HSL.
     --input: 220 20% 25%;
     --ring: 217 91% 60%;
 
-    /* AMR CodeStuff Brand Colors - Dark Mode */
+    /* AMR CodeStuff Brand Colors - Premium Dark Mode */
     --gradient-primary: linear-gradient(135deg, hsl(230 35% 35%), hsl(230 35% 45%));
-    --gradient-hero: linear-gradient(180deg, hsl(220 26% 14%), hsl(220 26% 18%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 26% 14% / 0.95), hsl(220 26% 18% / 0.9));
     --gradient-tech: linear-gradient(135deg, hsl(230 35% 35%), hsl(220 35% 40%));
-    --shadow-elegant: 0 10px 30px -10px hsl(230 35% 35% / 0.3);
-    --shadow-glow: 0 0 40px hsl(230 35% 45% / 0.4);
-    --shadow-card: 0 4px 20px -4px hsl(230 35% 35% / 0.2);
+    --gradient-accent: linear-gradient(135deg, hsl(217 91% 60%), hsl(230 35% 45%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.08), hsl(0 0% 100% / 0.12));
+    --shadow-elegant: 0 20px 60px -10px hsl(230 35% 35% / 0.4);
+    --shadow-glow: 0 0 60px hsl(230 35% 45% / 0.5);
+    --shadow-card: 0 8px 32px -8px hsl(230 35% 35% / 0.3);
+    --shadow-hover: 0 12px 40px -8px hsl(230 35% 35% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -119,6 +127,31 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    scroll-behavior: smooth;
   }
+
+  /* Modern scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary-glow));
+  }
+
+  /* Smooth animations */
+  * {
+    transition: var(--transition-smooth);
+  }
+}
 }
