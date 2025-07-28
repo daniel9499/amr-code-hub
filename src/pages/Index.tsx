@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Code, Cog, Brain, Server, ArrowRight, CheckCircle, Star, Users, Award, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Testimonials from '@/components/Testimonials';
-import developersBackground from '@/assets/developers-office-background.jpg';
+import modernHeroBackground from '@/assets/modern-hero-background.jpg';
 
 const Index = () => {
   const services = [
@@ -62,10 +62,10 @@ const Index = () => {
       {/* Hero Section */}
       <section 
         className="relative py-20 lg:py-32 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${developersBackground})` }}
+        style={{ backgroundImage: `url(${modernHeroBackground})` }}
       >
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-background/85 backdrop-blur-sm"></div>
+        {/* Gradient overlay for modern effect */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-primary/20"></div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
