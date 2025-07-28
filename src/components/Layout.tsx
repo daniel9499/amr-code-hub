@@ -23,13 +23,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/54cb1608-5501-4c7f-9c29-11a61d8fdce6.png" 
-                alt="AMR CodeStuff Logo" 
+                alt="Logo" 
                 className="h-10 w-auto"
               />
-              <span className="text-xl font-bold text-foreground">AMR CodeStuff</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -103,13 +102,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center">
                 <img 
                   src="/lovable-uploads/54cb1608-5501-4c7f-9c29-11a61d8fdce6.png" 
-                  alt="AMR CodeStuff Logo" 
+                  alt="Logo" 
                   className="h-8 w-auto"
                 />
-                <span className="text-lg font-bold text-foreground">AMR CodeStuff</span>
               </div>
               <p className="text-muted-foreground text-sm">
                 Delivering innovative, scalable, and efficient solutions tailored to client needs.
