@@ -1,45 +1,77 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Target, Eye, Users, Award, ArrowRight } from 'lucide-react';
+import { Target, Eye, Users, Award, ArrowRight, Code, Clock, Shield, Lightbulb } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
-  const values = [
+  const coreValues = [
     {
       icon: Target,
-      title: 'Mission',
-      description: 'To deliver innovative, scalable, and efficient technology solutions that empower businesses to achieve their goals and stay ahead in the digital landscape.'
+      title: 'Our Mission',
+      description: 'To empower businesses through innovative software solutions, automation, and strategic IT consulting. We transform complex technical challenges into competitive advantages that drive sustainable growth.'
     },
     {
       icon: Eye,
-      title: 'Vision',
-      description: 'To be the trusted technology partner that transforms businesses through cutting-edge software development, automation, and AI integration.'
+      title: 'Our Vision',
+      description: 'To be the trusted technology partner for businesses seeking digital transformation. We envision a future where technology seamlessly enhances every aspect of business operations.'
     },
     {
       icon: Users,
-      title: 'Values',
-      description: 'Excellence, innovation, integrity, and client success drive everything we do. We believe in building lasting partnerships through quality and trust.'
+      title: 'Our Values',
+      description: 'Excellence, integrity, innovation, and client success guide everything we do. We believe in transparent communication, continuous learning, and building lasting partnerships through quality deliverables.'
     }
   ];
 
-  const stats = [
-    { number: '50+', label: 'Projects Completed' },
-    { number: '5+', label: 'Years Experience' },
-    { number: '100%', label: 'Client Satisfaction' },
+  const expertise = [
+    {
+      icon: Code,
+      title: '10+ Years Experience',
+      description: 'Deep expertise in Microsoft .NET, enterprise software development, and modern web technologies.'
+    },
+    {
+      icon: Clock,
+      title: 'Rapid Delivery',
+      description: 'Agile methodologies and proven processes ensure fast time-to-market without compromising quality.'
+    },
+    {
+      icon: Shield,
+      title: 'Enterprise Security',
+      description: 'Security-first approach with comprehensive testing and compliance standards for enterprise applications.'
+    },
+    {
+      icon: Lightbulb,
+      title: 'Innovation Focus',
+      description: 'Cutting-edge AI and automation solutions that position your business ahead of the competition.'
+    }
+  ];
+
+  const teamStats = [
+    { number: '10+', label: 'Years Combined Experience' },
+    { number: '100+', label: 'Projects Delivered' },
+    { number: '50+', label: 'Happy Clients' },
     { number: '24/7', label: 'Support Available' }
   ];
 
-  const expertise = [
-    'Full-Stack Development',
-    'Cloud Architecture',
+  const technologies = [
+    'Microsoft .NET Framework & .NET Core',
+    'C# & ASP.NET Development',
+    'SQL Server & Entity Framework',
+    'Azure Cloud Services',
+    'React & Angular',
+    'Mobile Development (Xamarin)',
+    'Python & Machine Learning',
+    'Power Platform & SharePoint',
     'DevOps & CI/CD',
-    'Database Design',
-    'API Development',
-    'Mobile Applications',
-    'Machine Learning',
-    'Process Automation',
-    'Security Implementation',
-    'Performance Optimization'
+    'Microservices Architecture'
+  ];
+
+  const industries = [
+    'Healthcare & Medical Devices',
+    'Financial Services',
+    'Manufacturing & Industrial',
+    'Retail & E-commerce',
+    'Professional Services',
+    'Government & Public Sector'
   ];
 
   return (
@@ -51,7 +83,8 @@ const About = () => {
             About AMR CodeStuff
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
-            Your trusted partner in digital transformation, specializing in innovative software solutions that drive business success.
+            Your trusted technology partner in <strong>Langhorne, PA</strong> and beyond. We specialize in 
+            enterprise-grade software development, intelligent automation, and strategic IT consulting.
           </p>
         </div>
       </section>
@@ -60,12 +93,12 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {values.map((value, index) => {
+            {coreValues.map((value, index) => {
               const Icon = value.icon;
               return (
                 <Card
                   key={value.title}
-                  className="text-center group hover:shadow-glow transition-all duration-300 animate-scale-in"
+                  className="text-center group hover:shadow-glow transition-all duration-300 animate-scale-in h-full"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CardHeader>
@@ -75,7 +108,7 @@ const About = () => {
                     <CardTitle className="text-xl">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-center">{value.description}</CardDescription>
+                    <CardDescription className="text-center text-base">{value.description}</CardDescription>
                   </CardContent>
                 </Card>
               );
@@ -84,8 +117,71 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Company Story & Expertise */}
       <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Our Story & Expertise
+              </h2>
+              <div className="space-y-6 text-muted-foreground">
+                <p>
+                  <strong>AMR CodeStuff</strong> was founded with a clear mission: to bridge the gap between complex 
+                  technology challenges and business success. Based in <strong>Langhorne, PA</strong>, we serve clients 
+                  nationwide with a focus on enterprise-grade solutions.
+                </p>
+                <p>
+                  Our team brings over <strong>10 years of combined experience</strong> in Microsoft .NET development, 
+                  automation solutions, and AI integration. We've successfully delivered <strong>100+ projects</strong> 
+                  across various industries, from healthcare and finance to manufacturing and retail.
+                </p>
+                <p>
+                  What sets us apart is our deep understanding of both technology and business strategy. We don't just 
+                  build software – we create solutions that drive measurable business outcomes and competitive advantages.
+                </p>
+              </div>
+              
+              <div className="mt-8">
+                <Button asChild size="lg" className="group">
+                  <Link to="/contact">
+                    Work with Our Team
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="animate-scale-in">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {expertise.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <Card 
+                      key={item.title}
+                      className="group hover:shadow-glow transition-all duration-300"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <CardHeader>
+                        <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-3">
+                          <Icon className="h-6 w-6 text-primary-foreground" />
+                        </div>
+                        <CardTitle className="text-lg">{item.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <CardDescription className="text-sm">{item.description}</CardDescription>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -97,7 +193,7 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+            {teamStats.map((stat, index) => (
               <div
                 key={stat.label}
                 className="text-center animate-fade-in"
@@ -111,112 +207,120 @@ const About = () => {
         </div>
       </section>
 
-      {/* Expertise Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Expertise
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Technologies and practices we excel at to deliver outstanding results.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {expertise.map((skill, index) => (
-              <div
-                key={skill}
-                className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-elegant transition-all duration-300 animate-scale-in"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <span className="text-sm font-medium text-foreground">{skill}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Story Section */}
+      {/* Technologies & Industries */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Our Story
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Technologies */}
+            <div className="animate-fade-in">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Technologies We Master
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Building the future through innovative technology solutions.
+              <p className="text-muted-foreground mb-8">
+                Our expertise spans the full Microsoft technology stack and modern development frameworks.
               </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {technologies.map((tech, index) => (
+                  <div
+                    key={tech}
+                    className="bg-card border border-border rounded-lg p-3 text-center hover:shadow-card transition-all duration-300 animate-scale-in"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    <span className="text-sm font-medium text-foreground">{tech}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 animate-fade-in">
-                <p className="text-muted-foreground">
-                  AMR CodeStuff was founded with a simple mission: to help businesses leverage technology 
-                  for growth and success. We believe that the right software solutions can transform how 
-                  companies operate, compete, and serve their customers.
-                </p>
-                <p className="text-muted-foreground">
-                  Our team combines deep technical expertise with business acumen to deliver solutions 
-                  that not only meet current needs but also scale for future growth. We work closely 
-                  with each client to understand their unique challenges and goals.
-                </p>
-                <p className="text-muted-foreground">
-                  From startups to established enterprises, we've helped organizations across various 
-                  industries digitize their operations, automate processes, and integrate AI-powered 
-                  solutions that drive competitive advantage.
-                </p>
+            {/* Industries */}
+            <div className="animate-fade-in">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Industries We Serve
+              </h2>
+              <p className="text-muted-foreground mb-8">
+                Deep domain knowledge across multiple industries enables us to deliver targeted solutions.
+              </p>
+              <div className="space-y-4">
+                {industries.map((industry, index) => (
+                  <Card
+                    key={industry}
+                    className="animate-scale-in hover:shadow-glow transition-all duration-300"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <CardContent className="p-4">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                          <Award className="h-4 w-4 text-primary-foreground" />
+                        </div>
+                        <span className="font-medium text-foreground">{industry}</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
-
-              <Card className="animate-scale-in">
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-2">
-                    <Award className="h-5 w-5 text-primary" />
-                    <span>Why Choose Us?</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm text-foreground">Proven track record of successful project delivery</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm text-foreground">Agile development methodology for faster results</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm text-foreground">Ongoing support and maintenance services</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm text-foreground">Transparent communication throughout the process</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Why Choose AMR CodeStuff */}
       <section className="py-20">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Ready to Work Together?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help transform your business with innovative technology solutions.
-          </p>
-          <Button asChild size="lg" className="group">
-            <Link to="/contact">
-              Get in Touch
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
+        <div className="container mx-auto px-4 lg:px-8">
+          <Card className="bg-gradient-tech text-white">
+            <CardContent className="p-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Why Choose AMR CodeStuff?
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div className="space-y-4 text-left">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-xs font-bold">✓</span>
+                    </div>
+                    <span>Proven track record with 100+ successful projects delivered</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-xs font-bold">✓</span>
+                    </div>
+                    <span>Deep expertise in Microsoft .NET and enterprise technologies</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-xs font-bold">✓</span>
+                    </div>
+                    <span>Agile methodologies ensuring rapid time-to-market</span>
+                  </div>
+                </div>
+                <div className="space-y-4 text-left">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-xs font-bold">✓</span>
+                    </div>
+                    <span>24/7 ongoing support and maintenance services</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-xs font-bold">✓</span>
+                    </div>
+                    <span>Transparent communication and project management</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-xs font-bold">✓</span>
+                    </div>
+                    <span>Local presence in Langhorne, PA with nationwide reach</span>
+                  </div>
+                </div>
+              </div>
+              <Button asChild size="lg" variant="secondary" className="group">
+                <Link to="/contact">
+                  Get a Free Consultation
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </div>

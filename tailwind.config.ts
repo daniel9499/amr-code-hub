@@ -72,13 +72,12 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-midnight': 'var(--gradient-midnight)',
-				'gradient-cyan': 'var(--gradient-cyan)'
+				'gradient-tech': 'var(--gradient-tech)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'glow': 'var(--shadow-glow)',
-				'cyan': 'var(--shadow-cyan)'
+				'card': 'var(--shadow-card)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
