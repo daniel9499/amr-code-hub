@@ -63,14 +63,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen font-poppins">
-      {/* Hero Section with Parallax */}
-      <ParallaxBackground
-        backgroundImage={heroWaveBackground}
-        className="relative py-24 lg:py-40 min-h-screen flex items-center"
-        speed={0.3}
+      {/* Hero Section with Fixed Background */}
+      <section 
+        className="relative py-24 lg:py-40 min-h-screen flex items-center bg-fixed bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroWaveBackground})` }}
       >
-        {/* Sophisticated gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-hero"></div>
+        {/* Enhanced gradient overlay for better text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90"></div>
         
         {/* Floating shapes for modern effect */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -152,7 +151,7 @@ const Index = () => {
             </motion.div>
           </div>
         </div>
-      </ParallaxBackground>
+      </section>
 
       {/* Services Preview */}
       <section className="py-24 lg:py-32">
