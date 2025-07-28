@@ -82,7 +82,7 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
             About AMR CodeStuff
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
+          <p className="text-xl text-foreground max-w-3xl mx-auto animate-fade-in">
             Your trusted technology partner in <strong>Langhorne, PA</strong> and beyond. We specialize in 
             enterprise-grade software development, intelligent automation, and strategic IT consulting.
           </p>
@@ -125,7 +125,7 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                 Our Story & Expertise
               </h2>
-              <div className="space-y-6 text-muted-foreground">
+              <div className="space-y-6 text-foreground">
                 <p>
                   <strong>AMR CodeStuff</strong> was founded with a clear mission: to bridge the gap between complex 
                   technology challenges and business success. Based in <strong>Langhorne, PA</strong>, we serve clients 
@@ -187,7 +187,7 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Our Track Record
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-foreground max-w-2xl mx-auto">
               Numbers that reflect our commitment to excellence and client success.
             </p>
           </div>
@@ -216,7 +216,7 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Technologies We Master
               </h2>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-foreground mb-8">
                 Our expertise spans the full Microsoft technology stack and modern development frameworks.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -237,7 +237,7 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Industries We Serve
               </h2>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-foreground mb-8">
                 Deep domain knowledge across multiple industries enables us to deliver targeted solutions.
               </p>
               <div className="space-y-4">

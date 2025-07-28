@@ -100,7 +100,7 @@ const Contact = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
             Get Your Free Consultation
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
+          <p className="text-xl text-foreground max-w-3xl mx-auto animate-fade-in">
             Ready to transform your business with expert <strong>software development</strong> and <strong>automation solutions</strong>? 
             Contact AMR CodeStuff today for a free consultation.
           </p>
@@ -129,7 +129,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-4">Contact AMR CodeStuff</h2>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   Based in <strong>Langhorne, PA</strong>, we serve businesses nationwide with enterprise-grade 
                   software development, automation, and IT consulting services.
                 </p>
@@ -308,7 +308,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Visit Our Office</h2>
-            <p className="text-muted-foreground">Located in Langhorne, PA - serving businesses nationwide</p>
+            <p className="text-foreground">Located in Langhorne, PA - serving businesses nationwide</p>
           </div>
           
           <Card className="max-w-5xl mx-auto">

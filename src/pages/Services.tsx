@@ -134,7 +134,7 @@ const Services = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
             Professional Software Development Services
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
+          <p className="text-xl text-foreground max-w-3xl mx-auto animate-fade-in">
             AMR CodeStuff delivers enterprise-grade <strong>.NET solutions</strong>, <strong>automation systems</strong>, 
             and <strong>IT consulting</strong> services for businesses in Langhorne, PA and nationwide.
           </p>
@@ -165,7 +165,7 @@ const Services = () => {
                       </div>
                     </div>
                     
-                    <p className="text-lg text-muted-foreground mb-6">{service.description}</p>
+                    <p className="text-lg text-foreground mb-6">{service.description}</p>
                     
                     <div className="mb-8">
                       <h3 className="text-lg font-semibold text-foreground mb-4">Technologies & Expertise:</h3>
@@ -227,7 +227,7 @@ const Services = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Our Proven Development Process
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-foreground max-w-2xl mx-auto">
               A structured, agile approach that ensures successful project delivery every time.
             </p>
           </div>
