@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Code, Cog, Brain, Server, ArrowRight, CheckCircle, Star, Users, Award, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Testimonials from '@/components/Testimonials';
+import ImageCarousel from '@/components/ImageCarousel';
 import modernHeroBackground from '@/assets/modern-hero-background.jpg';
 
 const Index = () => {
@@ -196,6 +197,21 @@ const Index = () => {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Image Carousel Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              See Our Work in Action
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              From strategic planning to successful delivery, discover how we transform businesses through technology.
+            </p>
+          </div>
+          <ImageCarousel />
         </div>
       </section>
 
