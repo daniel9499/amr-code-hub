@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Code, Cog, Brain, Server, ArrowRight, CheckCircle, Star, Users, Award, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Testimonials from '@/components/Testimonials';
+import developersBackground from '@/assets/developers-office-background.jpg';
 
 const Index = () => {
   const services = [
@@ -59,8 +60,13 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-hero py-20 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section 
+        className="relative py-20 lg:py-32 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${developersBackground})` }}
+      >
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-background/85 backdrop-blur-sm"></div>
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
               Transform Your Business with
