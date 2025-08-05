@@ -69,7 +69,8 @@ const Index = () => {
         style={{ backgroundImage: `url(${heroWaveBackground})` }}
       >
         {/* Enhanced gradient overlay for better text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background/80 to-accent/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/40"></div>
         
         {/* Floating shapes for modern effect */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
