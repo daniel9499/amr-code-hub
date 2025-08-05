@@ -58,7 +58,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '(307) 372-1880\nFree consultation available'
+      content: '(630) 570-0549\nFree consultation available'
     },
     {
       icon: Mail,
@@ -106,9 +106,9 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in">
             <Button asChild size="lg" className="group">
-              <a href="tel:(307) 372-1880">
+              <a href="tel:(630) 570-0549">
                 <Phone className="mr-2 h-5 w-5" />
-                Call Now: (307) 372-1880
+                Call Now: (630) 570-0549
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
@@ -365,7 +365,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="group">
-              <a href="tel:(307) 372-1880">
+              <a href="tel:(630) 570-0549">
                 <Phone className="mr-2 h-5 w-5" />
                 Call for Immediate Consultation
               </a>

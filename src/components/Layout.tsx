@@ -157,7 +157,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span className="text-sm text-muted-foreground">(307) 372-1880</span>
+                  <span className="text-sm text-muted-foreground">(630) 570-0549</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary flex-shrink-0" />
