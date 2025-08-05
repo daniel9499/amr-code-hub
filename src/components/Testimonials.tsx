@@ -60,7 +60,7 @@ const Testimonials = () => {
                   <div className="flex-1">
                     <div className="flex items-center space-x-1 mb-2">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                        <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
                     <CardTitle className="text-lg">{testimonial.name}</CardTitle>
