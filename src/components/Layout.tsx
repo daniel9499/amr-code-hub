@@ -53,7 +53,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   to={item.href}
                   className={`text-sm font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'text-primary'
+                      ? 'text-background bg-primary px-3 py-2 rounded-md'
                       : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
@@ -86,7 +86,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     to={item.href}
                     className={`text-sm font-medium px-4 py-2 rounded-md transition-colors ${
                       isActive(item.href)
-                        ? 'text-primary bg-primary/10'
+                        ? 'text-background bg-primary'
                         : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
