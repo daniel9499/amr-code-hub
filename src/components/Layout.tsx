@@ -48,8 +48,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/54cb1608-5501-4c7f-9c29-11a61d8fdce6.png" 
-                alt="Logo" 
+                src="/lovable-uploads/64f71ea4-02d3-4c00-9324-f0778784a385.png" 
+                alt="AMR CodeStuff Logo" 
                 className="h-12 w-auto"
               />
             </Link>
@@ -127,8 +127,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <img 
-                  src="/lovable-uploads/54cb1608-5501-4c7f-9c29-11a61d8fdce6.png" 
-                  alt="Logo" 
+                  src="/lovable-uploads/64f71ea4-02d3-4c00-9324-f0778784a385.png" 
+                  alt="AMR CodeStuff Logo" 
                   className="h-8 w-auto"
                 />
               </div>
