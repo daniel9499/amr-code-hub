@@ -31,8 +31,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Header */}
       <header className={`sticky top-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md border-b border-border/20 shadow-elegant' 
-          : 'bg-white border-b border-transparent'
+          ? 'bg-white/10 backdrop-blur-xl border-b border-white/20 shadow-lg' 
+          : 'bg-white/5 backdrop-blur-lg border-b border-white/10'
       }`}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-16">
