@@ -107,9 +107,9 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 max-w-4xl mx-auto font-inter font-light"
             >
-              AMR CodeStuff specializes in <span className="font-semibold text-primary">.NET development</span>, 
-              <span className="font-semibold text-primary"> automation solutions</span>, 
-              and <span className="font-semibold text-primary">AI integration</span> for businesses nationwide.
+              AMR CodeStuff specializes in <span className="font-semibold text-white">.NET development</span>, 
+              <span className="font-semibold text-white"> automation solutions</span>, 
+              and <span className="font-semibold text-white">AI integration</span> for businesses nationwide.
             </motion.p>
             
             <motion.div
